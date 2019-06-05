@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        // Задача 5.
+        // Реализовать четыре основные арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return.
+        let a = +prompt('Введите первое число');
+        let b = +prompt('Введите второе число');
+        function sum(a,b) {
+            return a+b;
+        }
+        function mult(a,b) {
+            return a*b;
+        }
+        function sub(a,b) {
+            return a-b;
+        }
+        function div(a,b) {
+            return a/b;
+        }
+        alert('Сумма введеных вами чисел: '+ sum(a,b));
+        alert('Произведение введеных вами чисел: '+ mult(a,b));
+        alert('Разность введеных вами чисел: '+ sub(a,b));
+        alert('Частное введеных вами чисел: '+ div(a,b));
+
+    </script>
+</body>
+</html>
