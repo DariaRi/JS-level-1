@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3, task 3</title>
+</head>
+<body>
+<script>
+    'use sctrict';
+    // 3. Перед вами находится массив с продуктами, сегодня распродажа и вам нужно на каждый товар применить скидку
+    // 50%, можете использовать метод map https://mzl.la/2ZZohun :
+        const products = [
+            {
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            },
+        ];
+    let productsDiscount = JSON.parse(JSON.stringify(products));
+
+    productsDiscount = productsDiscount.map(product => {
+        product.price = product.price / 2;
+            return  product;
+        });
+        console.log(productsDiscount); // В документации написано, что метод map не перезатирает старый массив, но у меня перезатер,
+    // и, при выводе в консоль исходного массива products[], выведется уже такое же значение, как и в productsDiscount[}.
+    // поэтому обратилась к JSON.parse(JSON.stringify(products));
+</script>
+</body>
+</html>
