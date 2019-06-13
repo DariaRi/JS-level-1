@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature</title>
+</head>
+<body>
+    <script>
+         // 1. Задать температуру в градусах по Цельсию.
+         //    Вывести в alert соответствующую температуру в градусах по Фаренгейту.
+         //    Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc – температура по Цельсию
+        let tf; // °F
+        let tc; // °C
+       tc = prompt('Введите температуру по °C: ');
+       tf = (9/5) * tc + 32;
+       alert('Температура по Фаренгейту: ' + tf + '°F');
+    </script>
+</body>
+</html>
