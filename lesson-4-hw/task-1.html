@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 4, task 1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function stringToObj(num)
+        {
+            if (isNaN(num)) { // Проверка на число
+                return null;
+            }
+            let arrNum = num.split('');
+            while (arrNum.length < 3)
+            {
+                arrNum.unshift(0); // Добавляем 0 в начало, чтобы заполнить массив до 3х цифр. Например, 001 или 036.
+            }
+            let objNum = {};
+            if (arrNum.length > 3)
+            {
+                return null;
+            } else {
+                objNum['сотни'] = +arrNum[0];
+                objNum['десятки'] = +arrNum[1];
+                objNum['единицы'] = +arrNum[2];
+                return objNum;
+            }
+        }
+        let number = prompt('Введите число, состоящие из одной, двух или трех цифр:');
+        let obj = stringToObj(number);
+        if (obj == null)
+        {
+            console.log('Неккоректный ввод данных. Перезагрузите страницу и попробуйте снова');
+        } else {
+            console.log(obj);
+        }
+    </script>
+</body>
+</html>
