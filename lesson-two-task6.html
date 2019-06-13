@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        //  Задача 5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        // где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        // переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        // (использовать функции из задания 4) и вернуть полученное значение.
+        /**
+         *
+         * @param arg1 - первое введеное число
+         * @param arg2 - второе введеное чило
+         * @param operation - знак операции между двумя параметрами
+         * @returns {string|number|*}
+         */
+            function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return arg1+arg2;
+                    break;
+                case '-':
+                    return arg1-arg2;
+                    break;
+                case '*':
+                    return arg2*arg1;
+                    break;
+                case '/':
+                    return arg1/arg2;
+                    break;
+                default:
+                    return 'error'
+            }
+        }
+        let a = +prompt('Введите первое число ');
+        let b = +prompt('Введите второе число ');
+        let c = prompt('Введите математический знак операции ');
+        alert('Результат вашей математичской операции: '+mathOperation(a,b,c));
+
+        //Игорь, не успеваю сделать дополнительную зачаду на склониния слова. Примерно понимаю, как реализовать ее.
+        // Можно, пожалуйста, я ее досдам в следющем домашнем задании? Спасибо.
+
+    </script>
+</body>
+</html>
