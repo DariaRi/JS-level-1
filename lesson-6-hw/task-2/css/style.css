@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot') format('embedded-opentype'), url('../fonts/fontello.woff') format('woff'), url('../fonts/fontello.ttf') format('truetype'), url('../fonts/fontello.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.header-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto 60px;
+}
+.btn-group {
+  background-color: #353942;
+  width: 100%;
+  max-height: 400px;
+  height: 100px;
+  position: relative;
+}
+.btn {
+  display: block;
+  width: 110px;
+  height: 45px;
+  font-size: 20px;
+  color: #353942;
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  cursor: pointer;
+}
+.dropdown-menu {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: absolute;
+  top: 75px;
+  right: 20px;
+}
+.dropdown-menu.show {
+  display: block;
+}
+.products {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.product {
+  display: flex;
+  flex-flow: column wrap;
+}
+.product-name,
+.product-price {
+  font-size: 20px;
+  color: #353942;
+  margin-bottom: 10px;
+}
+.product-price {
+  margin-top: 10px;
+}
+table {
+  border-spacing: 15px;
+}
+td,
+th {
+  padding: 0;
+}
+.table th,
+.table td {
+  min-width: 50px;
+  text-align: center;
+}
+.icon-rouble:before,
+.icon-trash:before {
+  font-family: 'fontello';
+  font-style: normal;
+  margin-right: 5px;
+}
+.icon-rouble:before {
+  content: '\f158';
+}
+.icon-trash:before {
+  cursor: pointer;
+  content: '\f1f8';
+}
+.get-product {
+  font-size: 18px;
+  color: #353942;
+  background-color: #82BF56;
+  border-bottom: 2px solid #669644;
+  text-shadow: 0px -1px #669644;
+  border-radius: 3px;
+  cursor: pointer;
+  max-width: 130px;
+  height: 35px;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  outline: none;
+}
+.get-product:active {
+  transform: translate(0px, 2px);
+  -webkit-transform: translate(0px, 2px);
+  border-bottom: 1px solid;
+}

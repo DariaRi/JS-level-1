@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart, Task 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-container">
+        <nav class="navbar">
+            <div class="btn-group">
+                <button class="btn" id="btnCart">Cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 14 14"><path d="M5 8l4 4 4-4z"/></svg>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Count</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2" scope="row">Total:</th>
+                                <td colspan="3">
+                                    <span class="total">0</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="products">
+        <div class="product">
+            <span class="product-id hidden">1</span>
+            <span class="product-name">Product 1</span>
+            <img src="img/DSC02089.JPG" width="350" alt="product 1" title="product 1">
+            <span class="product-price"><i class="icon-rouble"></i>234</span>
+            <button class="get-product">Add to cart</button>
+        </div>
+        <div class="product">
+            <span class="product-id hidden">2</span>
+            <span class="product-name">Product 2</span>
+            <img src="img/DSC02010.JPG" width="350" alt="product 2" title="product 2">
+            <span class="product-price"><i class="icon-rouble"></i>44</span>
+            <button class="get-product">Add to cart</button>
+        </div>
+        <div class="product">
+            <span class="product-id hidden">3</span>
+            <span class="product-name">Product 3</span>
+            <img src="img/DSC01926.JPG" width="350" alt="product 3" title="product 3">
+            <span class="product-price"><i class="icon-rouble"></i>800</span>
+            <button class="get-product">Add to cart</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
