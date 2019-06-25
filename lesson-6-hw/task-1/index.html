@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+</head>
+<body style="background-color: black; direction: rtl">
+    <div style="width: 600px; margin:0 auto" class="parent-container slider">
+        <div><img width="600px" src="img/DSC01926.JPG" /></div>
+        <div><img width="600px" src="img/DSC02010.JPG" /></div>
+        <div><img width="600px" src="img/DSC02089.JPG" /></div>
+        <div><img width="600px" src="img/DSC02099.JPG" /></div>
+        <div><img width="600px" src="img/DSC02122.JPG" /></div>
+        <div><img width="600px" src="img/DSC02202.JPG" /></div>
+
+    </div>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script>
+    $(document).ready(function()
+    {
+        $(".slider").slick({
+            infinite: true,
+            rtl:true,
+        });
+    });
+
+    </script>
+</body>
+</html>
