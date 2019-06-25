@@ -1,0 +1,43 @@
+.mainWrapper {
+    margin: 0 auto;
+    width: 620px;
+    height: 620px;
+    background-color: #F0DAB5;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px -4px rgba(86, 62, 41, 0.75);
+}
+#main {
+    width: 560px;
+    height: 560px;
+    margin: 30px auto;
+    border: 2px solid #ad7952;
+    position: relative;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #563e29;
+}
+.block {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.brown {
+    background-color: #B58763;
+}
+.beige {
+    background-color: #F0DAB5;
+}
+.number {
+    position: absolute;
+    left: -21px;
+    top: 27px;
+    font-size: 20px;
+}
+.letter {
+    position: absolute;
+    left: 25px;
+    bottom: -25px;
+}
